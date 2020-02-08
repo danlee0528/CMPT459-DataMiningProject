@@ -7,8 +7,15 @@ The script uses a pre-compiled computer vision model from a python library. The 
 ## Output images 
 
 ![object detection image 1](./obj_detection_imgs/object-detection_1.jpg)
+![object detection image 2](./obj_detection_imgs/object-detection_2.png)
+![object detection image 3](./obj_detection_imgs/object-detection_3.png)
+![object detection image 4](./obj_detection_imgs/object-detection_4.jpg)
+![object detection image 5](./obj_detection_imgs/object-detection_5.jpg)
 
 ## Feature extraction output
+
+![output_image 1](./obj_detection_imgs/output_1.png)
+![output_image 2](./obj_detection_imgs/output_2.png)
 
 ## Code
 
