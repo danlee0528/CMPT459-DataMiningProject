@@ -2,7 +2,7 @@
 
 The cvObjParser.py file takes two arguments, one for image output, and the other for the folder containing all the images for a listing. 
 
-At a high level, we believed a staged listing (one with furniture) will make a listing feel more 'homely' and increase iterest, along with having plants, more images, and high contrast values. We infer high contrast means images have been post-processed, and will be more appealing.
+At a high level, we believed a staged listing (one with furniture) will make a listing feel more 'homely' and increase iterest, along with having plants, more images, and high contrast values. We infer high contrast means images have been post-processed, and will be more appealing. We also infer having more images than less images will create more interest.
 
 The script uses a pre-compiled computer vision model from a python library. The script will find  furniture, appliances, and plants. The script will also extract contrast values, calculating the constrast average and count the number of images. 
 
