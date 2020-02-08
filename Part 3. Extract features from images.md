@@ -2,7 +2,9 @@
 
 The cvObjParser.py file takes two arguments, one for image output, and the other for the folder containing all the images for a listing. 
 
-The script uses a pre-compiled computer vision model from a python library. The script will find  furniture, appliances, and plants, as we predict a listing with furniture will get more interest than a listing without. The script will also extract contrast values, and count the number of images. We predict that high contrast values mean listing will have post processing, and the more images a listing has will create more interest than a listing with no images, or a few images.
+At a high level, we believed a staged listing (one with furniture) will make a listing feel more 'homely' and increase iterest, along with having plants, more images, and high contrast values. We infer high contrast means images have been post-processed, and will be more appealing.
+
+The script uses a pre-compiled computer vision model from a python library. The script will find  furniture, appliances, and plants. The script will also extract contrast values, calculating the constrast average and count the number of images. 
 
 ## Output images 
 
@@ -19,6 +21,10 @@ The script uses a pre-compiled computer vision model from a python library. The 
 
 ### Output for all listings (took ~10 mins on sample images)
 ![output_image 2](./obj_detection_imgs/output_2.png)
+
+## Extracted features format
+
+The extracted features will have a format such as [int(# of images), int(# of plants), bool(image of kitchen), bool(image of bathroom), bool(contrast > 0.90)]
 
 ## Code
 
