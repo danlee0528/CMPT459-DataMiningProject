@@ -14,7 +14,10 @@ The script uses a pre-compiled computer vision model from a python library. The 
 
 ## Feature extraction output
 
+### Output for one listing
 ![output_image 1](./obj_detection_imgs/output_1.png)
+
+### Output for all listings (took ~10 mins on sample images)
 ![output_image 2](./obj_detection_imgs/output_2.png)
 
 ## Code
