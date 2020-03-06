@@ -8,14 +8,8 @@ from collections import defaultdict
 import json
 import pandas as pd
 
-# TODO
-# () output json
-# () make json row
-# () add data
-# ()
-# ()
-
 # usage: python3 cvObjParser.py [0:no output, 1:output] [image folder path]
+# *** bug: image folder has to be in same directory as this script
 
 # check if want to see image output with first argument (iterate through images with 'q')
 check_output = sys.argv[1]
@@ -31,6 +25,7 @@ def frequency(features):
 
 # take image folder as argument & extract image paths
 folder_path = sys.argv[2]
+#print(folder_path)
 images = []
 for r, d, f in os.walk(folder_path):
     '''
@@ -51,13 +46,14 @@ for img in images:
     #listing_id[sub_str[1]] = []
     listing_id[sub_str[1]].append(sub_str[2])
     
-print('listing data is', listing_id)
+#print('listing data is', listing_id)
 
 # extract features from collection of images
 json_data = pd.DataFrame({'listing_id':[], 'num_images':[], 'num_plants':[], 'kit_img': [], 'bath_img':[], 'num_furniture':[], 'contrast': []})
 for (listing, image_list) in listing_id.items():
     img_contrasts = []
     features = []
+    #print(listing)
     for image in image_list:
         #print('listing is', listing)
         #print('image is', image)
@@ -65,6 +61,7 @@ for (listing, image_list) in listing_id.items():
         #print('image path:', im_path)
         
         in_img = cv2.imread(im_path)
+        #print(in_img)
     
         # show original image
         '''
