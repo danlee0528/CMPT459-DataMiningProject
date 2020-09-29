@@ -1,8 +1,8 @@
+# Final Report
+- https://github.com/danlee0528/Two-Sigma-Connect-Rental-Listing-Inquiries/blob/master/Project%20Final%20Report.pdf
+
 # Dataset
 - https://www.kaggle.com/c/two-sigma-connect-rental-listing-inquiries/overview
-
-# Report
-- https://github.com/danlee0528/Two-Sigma-Connect-Rental-Listing-Inquiries/blob/master/Project%20Final%20Report.pdf
 
 ## Dataset Description
 Predict how popular an apartment rental listing is based on the listing content like text description, photos, number of bedrooms, price, etc. The data comes from renthop.com, an apartment listing website. These apartments are located in New York City.
@@ -48,16 +48,11 @@ or deleting the dirty or coarse data.
 dataset, optionally use traditional feature extraction methods. Neural network-based methods that have recently become very
 popular for processing natural language and images are not allowed in this project.
 
-# Submissions 
-## 1. Exploratory data analysis (Use the training dataset (. . . train) to perform EDA)
-  - [ ] Plot histograms for the following numeric columns: Price, Latitude & Longitude.
-  - [ ] Plot hour-wise listing trend and find out the top 5 busiest hours of postings.
-  - [ ] Visualization to show the proportion of target variable values.
-## 2. Dealing with missing values, outliers
-  - [ ] Find out the number of missing values in each variable.
-  - [ ] Find out the number of outliers in each variable. Plot visualizations to demonstrate them. You can either remove the outliers or provide a short argument as to why outlier detection is not meaningful for that attribute.
-  - [ ] Can we safely drop the missing values? If not, how will you deal with them?
-## 3. Feature extraction from images and text
-  - [ ] Extract features from the images and transform it into data that’s ready to be used in the model for classification.
-  - [ ] Extract features from the text data and transform it into data that’s ready to be used in the model for classification.
+## Phase 2. Training Models
+Train on the data that has been preprocessed in milestone 1. Choose among the following three classifiers:
+1. Decision Tree
+2. Logistic Regression
+3. SVM
 
+## Phase 3. Advanced Models
+Develop more advanced classifiers of own choice. The only restriction is that only the classifiers used in milestone 2 should be engineered.
