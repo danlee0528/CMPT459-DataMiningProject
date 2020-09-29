@@ -1,12 +1,11 @@
-# Objective
-The main goal of this project is predicting how popular an apartment rental listing will be on the basis of data mentioned above. 
-However, there are some intermediate stages which enhance your analytical skills and prepare you for the final goal.
-
 # Dataset
 - https://www.kaggle.com/c/two-sigma-connect-rental-listing-inquiries/overview
 
+# Report
+- https://github.com/danlee0528/Two-Sigma-Connect-Rental-Listing-Inquiries/blob/master/Project%20Final%20Report.pdf
+
 ## Dataset Description
-In this competition, you will predict how popular an apartment rental listing is based on the listing content like text description, photos, number of bedrooms, price, etc. The data comes from renthop.com, an apartment listing website. These apartments are located in New York City.
+Predict how popular an apartment rental listing is based on the listing content like text description, photos, number of bedrooms, price, etc. The data comes from renthop.com, an apartment listing website. These apartments are located in New York City.
 
 The target variable, interest_level, is defined by the number of inquiries a listing has in the duration that the listing was live on the site. 
 
@@ -36,23 +35,18 @@ The target variable, interest_level, is defined by the number of inquiries a lis
 
 # Project Description
 ## Phase1. Exploratory data analysis and data pre-processing
-
-Like all the data mining and machine learning pipelines, we expect you to perform the initial
-analysis and exploration on the dataset to summarize its main characteristics. This step is a
+- Perform the initial analysis and exploration on the dataset to summarize its main characteristics. This step is a
 great practice to see what the data can tell you beyond the formal modelling or hypothesis
-testing task, like discovering the potential patterns, spotting outliers and so on. To this aim, you
-can apply any meaningful visualization methods and statistical tests. It is worth noting, that
-you may incrementally improve your exploration section, as you work on the next steps.
+testing task, like discovering the potential patterns, spotting outliers and so on. To this aim, apply any meaningful visualization methods and statistical tests.
 
-In addition, in this phase, you need to perform data pre-processing, which is the practice of
+- In addition, in this phase, perform data pre-processing, which is the practice of
 detecting and correcting corrupt or inaccurate records from the dataset, by identifying
 incomplete, incorrect, inaccurate or irrelevant parts of the data and then replacing, modifying,
 or deleting the dirty or coarse data.
 
-Finally, you need to extract features from the unstructured text and images associated with the
-dataset. You can use traditional feature extraction methods such as those presented in class.
-You are not expected to use neural network-based methods that have recently become very
-popular for processing natural language and images.
+- Finally, extract features from the unstructured text and images associated with the
+dataset, optionally use traditional feature extraction methods. Neural network-based methods that have recently become very
+popular for processing natural language and images are not allowed in this project.
 
 # Submissions 
 ## 1. Exploratory data analysis (Use the training dataset (. . . train) to perform EDA)
